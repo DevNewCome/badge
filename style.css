@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased; /*fonte fica mais suave */
+  --gray: hsl(240, 9%, 89%);
+  --black: hsl(240, 6%, 13%);
+}
+
+body {
+  
+  display: grid;
+  place-items: center;
+  background-color: rgb(44, 44, 44);
+
+  
+}
+
+
+
+
+
+main {
+ background: url('images/Desktop.svg') no-repeat center/cover;
+ width: 100vw;
+ min-height: 812px;
+ height: 100vh;
+ color:var(--gray);
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;  /*Deixa no meio*/
+  margin-right: auto; /*Deixa no meio*/
+  text-align: center;
+}
+
+.img-avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position:relative; /* para funcionar com position absolute e a imagem ficar no topo da imagem não no topo da pagina*/
+}
+
+.foto-avatar {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover; /*propriedade ajusta a imagem de acordo com o valor escolhido de width ou height*/
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.selo-rocket {
+  position: absolute; /*cria niveis de empilhamento para a imagem poder ficar em cima da outra*/
+  top: -15px;
+  z-index: 1;
+}
+a {
+ list-style: none;
+ text-decoration: none;
+ font: bold 700;
+ margin-top: 0.25rem;
+ color: var(--gray)
+}
+
+p{
+  margin-top: 2rem;
+}
+
+h1{
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  margin-top: 1.5rem;
+}
+ul {
+  display: flex;
+  list-style: none;
+  margin-top: 2rem;
+  margin-left: -15px;
+
+}
+
+ul li {
+  padding: 2px;
+}
+
