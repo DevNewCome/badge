@@ -48,7 +48,7 @@ main {
   width: 10rem;
   height: 11.5rem;
   object-fit: cover; /*propriedade ajusta a imagem de acordo com o valor escolhido de width ou height*/
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: circle(50% at 50% 50%);
 }
 
 .selo-rocket {
@@ -85,3 +85,6 @@ ul li {
   padding: 2px;
 }
 
+@media {
+  
+}
